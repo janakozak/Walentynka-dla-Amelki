@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czy zostaniesz moją walentynką?</title>
+    <style>
+        body {
+            background-color: red;
+            background-image: url('https://image.ceneostatic.pl/data/products/147749063/i-mis-duzy-misiek-50cm-na-walentynki-bialy-z-sercem.jpg'); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1000px; 
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 150px; 
+            padding-bottom: 1000px; 
+        }
+        h1 {
+            color: black;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: pink;
+            color: red;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ffcccc;
+            border-color: #ffcccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Czy zostaniesz moją walentynką?</h1>
+    <button onclick="wybierzOdpowiedz('Tak')" class="button">Tak</button>
+    <button onclick="wybierzOdpowiedz('Nie')" class="button">Nie</button>
+
+    <script>
+        function wybierzOdpowiedz(odpowiedz) {
+            if (odpowiedz === 'Tak') {
+                alert('Bardzo Cię kocham Amelia! <3');
+            } else {
+                alert('Błędna odpowiedź, spróbuj jeszcze raz.');
+            }
+        }
+    </script>
+</body>
+</html>
